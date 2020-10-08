@@ -1,0 +1,43 @@
+import turtle as T
+
+mandala = T.Turtle()
+window = T.Screen()
+T.title("Cute Mandala")
+T.bgcolor("#2c3e50")
+mandala.speed(1)
+n = 100
+
+def drawMandala(n):
+  for i in range(n):
+      T.penup()
+      T.forward(100)
+      T.left(90)
+      T.penup()
+      T.forward (30)
+      T.left (90)
+      T.pendown()
+      T.pencolor ("#fff2cc")
+      T.forward (60)
+      T.pencolor("#ffe599")
+      T.right (70)
+      T.forward (70)
+      T.right (40)
+      T.forward (50)
+      T.pencolor ("#ffd966")
+      T.left (90)
+      T.pensize(5)
+      T.forward (100)
+      T.pencolor("#f1c232")
+      T.left(90)
+      T.forward (100)
+      T.right (50)
+      T.forward (70)
+      T.pensize(10)
+      T.left (60)
+      T.pensize(6)
+      T.forward (65)
+      T.left (45)
+      T.forward (120)
+
+drawMandala(n)
+window.exitonclick()
